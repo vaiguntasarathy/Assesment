@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import schemaOptions from "./SchemaOptions";
 
-
-
 const SegmentModal = ({ closeModal }) => {
   const [segmentName, setSegmentName] = useState("");
   const [schemas, setSchemas] = useState([]);
   const [selectedSchema, setSelectedSchema] = useState("");
 
   const webhookUrl =
-   "https://webhook.site/dcfb32fa-037d-4973-b334-23635e8681f2";
+    "https://webhook.site/dcfb32fa-037d-4973-b334-23635e8681f2";
 
   const getAvailableOptions = () => {
     const selectedValues = schemas.map((item) => item.schema);
@@ -47,8 +45,6 @@ const SegmentModal = ({ closeModal }) => {
         return { [selectedOption.value]: selectedOption.label };
       }),
     };
-
-    
 
     await fetch(webhookUrl, {
       method: "POST",
