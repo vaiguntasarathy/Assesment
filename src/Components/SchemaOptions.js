@@ -1,4 +1,4 @@
-const schemaOptions = [
+const SchemaOptions = [
     { label: 'First Name', value: 'first_name' },
     { label: 'Last Name', value: 'last_name' },
     { label: 'Gender', value: 'gender' },
@@ -7,4 +7,4 @@ const schemaOptions = [
     { label: 'City', value: 'city' },
     { label: 'State', value: 'state' }
   ];  
-  export default  schemaOptions
+  export default  SchemaOptions
